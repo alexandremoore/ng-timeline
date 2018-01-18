@@ -2,6 +2,10 @@
 
 Simple animated timeline component for Angular 4+
 
+[![GitHub issues](https://img.shields.io/github/issues/alexandremoore/ng-timeline.svg)](https://github.com/alexandremoore/ng-timeline/issues)
+[![GitHub license](https://img.shields.io/github/license/alexandremoore/ng-timeline.svg)](https://github.com/alexandremoore/ng-timeline/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dt/ng-timeline.svg)]()
+
 ## How to install
 ```
 npm install ng-timeline
