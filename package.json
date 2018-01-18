@@ -1,7 +1,7 @@
 {
   "name": "ng-timeline",
   "description": "Simple animated timeline component for Angular 4+",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,7 @@
     "build": "ng build --prod",
     "package": "npm run clean && ng-packagr -p ng-package.json && npm run bundle-scss && npm run bundle-css",
     "bundle-scss": "scss-bundle -c scss-bundle.config.json",
-    "bundle-css": "node-sass ./src/scss/_timeline.scss -o dist",
+    "bundle-css": "node-sass ./src/scss/_timeline.scss -o dist/css",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

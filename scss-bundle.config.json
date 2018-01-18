@@ -1,4 +1,4 @@
 {
   "entry": "./src/scss/_timeline.scss",
-  "dest": "dist/_timeline.scss"
+  "dest": "dist/scss/_timeline.scss"
 }
