@@ -1,0 +1,8 @@
+<div class="ng-timeline">
+  <div class="ng-timeline-entries" [@.disabled]="!enableAnimation" [@timelineAnimation]="entries.length">
+    <div class="ng-timeline-entry" *ngFor="let entry of entries; index as i">
+      <div class="ng-timeline-title" [ngClass]="{'big': entry.major }" [innerHtml]="entry.title"></div>
+      <div class="ng-timeline-body" [innerHtml]="entry.body"></div>
+    </div>
+  </div>
+</div>

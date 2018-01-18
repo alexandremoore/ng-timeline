@@ -1,0 +1,76 @@
+@import 'variables';
+
+.ng-timeline {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    &:before {
+      content: '';
+      position: relative;
+      top: 0px;
+      left: calc(50% + 2px);
+      bottom: 0px;
+      transform: translateX(-50%);
+      width: 4px;
+      background-color: $timeline-border-color;
+    }
+    .ng-timeline-entries {
+      width: calc(100% - 80px);
+      margin: auto;
+      position: relative;
+      left:-5px;
+      .ng-timeline-entry {
+        width:calc(50% - 80px);
+        float:left; 
+        padding:20px;
+        clear:both;
+        text-align:right;
+        &:not(:first-child) {
+          margin-top:-60px;
+        }
+        .ng-timeline-title {
+          font-size:32px;
+          margin-bottom:12px;
+          position: relative;
+          color: $timeline-title-color;
+          &:before {
+            content: '';
+            position: absolute;
+            width:8px;
+            height:8px;
+            border:4px solid $timeline-border-color;
+            background-color:$timeline-background-color;
+            border-radius:100%;
+            top:50%;
+            transform:translateY(-50%);
+            right:-73px;
+            z-index:1000;
+          }
+          &.big:before {
+            width:24px;
+            height:24px;
+            transform:translate(8px,-50%);
+          }
+        }
+        .ng-timeline-body {
+          color:$timeline-body-color;
+          p {
+            line-height:1.4em;
+          }
+        }
+        &:nth-child(2n) {
+          text-align:left;
+          float:right;
+          .ng-timeline-title {
+            &:before {
+              left:-63px;
+            }
+            &.big:before {
+              transform:translate(-8px,-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  
