@@ -15,12 +15,6 @@ If your using angular-cli, you can add it in the styles array of .angular-cli.js
         "../node_modules/ng-timeline/css/_timeline.css"
       ],
 ```
-Or simply add it in the index.html:
-```
-<head>
-  <link rel="stylesheet" type="text/css" href="../node_modules/ng-timeline/_timeline.css">
-</head>
-```
 
 #### SCSS
 You can also include the SCSS file in your styles.scss:
